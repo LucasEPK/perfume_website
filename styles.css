@@ -1,15 +1,4 @@
-/*@media(max-width:800px){
-    .flex_container{
-        flex-direction: column;
-    }
-
-    #item1 img{
-        content: url(images/image-product-mobile.jpg);
-        max-width: 200px;
-        max-height: auto;
-    }
-}*/
-
+/*CSS for all the page*/
 .gray_txt{
     color: hsl(228, 12%, 48%);
     font-family: 'Montserrat';
@@ -92,4 +81,30 @@ body{
     height: 45px;
     cursor: pointer;
     border-radius: 10px;
+}
+
+#button1:hover{
+    /*makes button change color when hovered*/
+    background-color: hsl(158, 36%, 20%);
+}
+
+@media(max-width:800px){ /*this needs to be put after the other code because of how css works*/
+    .flex_container{
+        /*Changes flex direction to column so objects go down instead of sideways*/
+        flex-direction: column;
+        /*I set the height manually because it overflowed idk why*/
+        height: 700px;
+        max-height: max-content; /*tbh idk what this does*/
+        margin: 20px; /*This makes it so the borders of the window don't touch the container*/
+    }
+
+    #item1{
+        /*changes background image*/
+        background-image: url('images/image-product-mobile.jpg');
+        width: 100%; /*makes image take all the width space of container*/
+        min-height: 220px;
+
+        /*changes borders so that it matches the new order*/
+        border-radius: 10px 10px 0px 0px;
+    }
 }
