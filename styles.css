@@ -1,0 +1,92 @@
+/*@media(max-width:800px){
+    .flex_container{
+        flex-direction: column;
+    }
+
+    #item1 img{
+        content: url(images/image-product-mobile.jpg);
+        max-width: 200px;
+        max-height: auto;
+    }
+}*/
+
+.gray_txt{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat';
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.bold_txt{
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 33px;
+    margin: 20px 0;
+}
+
+#big_price{
+    color: hsl(158, 36%, 37%);
+}
+
+#perfume_txt{
+    margin: 0;
+}
+
+#small_price{
+    margin: 4px 20px;
+}
+
+body{
+
+    margin: 0px;/*To make it work with vh*/
+    
+    /*Centers all the content in body*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+    background-color: hsl(30, 38%, 92%);
+}
+
+.flex_container{
+    max-width: 600px;
+    max-height: 450px;
+    display: flex;
+
+    background-color: hsl(0, 0%, 100%);
+
+    border-radius: 10px;
+}
+
+#item1 {
+    background-color: aqua;
+    width: 1000px;
+    height: 450px;
+
+    background-image: url('images/image-product-desktop.jpg');
+    background-size: cover;
+    border-radius: 10px 0px 0px 10px;
+    
+}
+
+
+#item2{
+    padding: 30px;
+}
+
+#button1{
+    margin: 10px 0 0 0;
+
+    /*makes the button green and text white*/
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 10px;
+}
