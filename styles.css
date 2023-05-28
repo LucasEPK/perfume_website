@@ -14,14 +14,16 @@
     color: hsl(228, 12%, 48%);
     font-family: 'Montserrat';
     font-size: 14px;
+    /*sets space between text*/
     margin: 20px 0;
 }
 
 .bold_txt{
     color: hsl(212, 21%, 14%);
     font-family: 'Fraunces';
-    font-weight: 700;
+    font-weight: 700; /*Makes text bold*/
     font-size: 33px;
+    /*sets space between text*/
     margin: 20px 0;
 }
 
@@ -52,6 +54,7 @@ body{
 }
 
 .flex_container{
+    /*sets container as flex to make items align in rows*/
     max-width: 600px;
     max-height: 450px;
     display: flex;
@@ -85,7 +88,7 @@ body{
     border: none;
     color: white;
     font-weight: 700;
-    width: 100%;
+    width: 100%; /*makes button take all the div width space*/
     height: 45px;
     cursor: pointer;
     border-radius: 10px;
